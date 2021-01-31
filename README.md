@@ -1,2 +1,2 @@
-# gameserver-status
- Discord bot to fetch game server status
+## Description
+Discord Status Bot that fetches the gameservers status and notifies in discord
