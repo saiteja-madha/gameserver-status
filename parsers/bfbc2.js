@@ -1,8 +1,7 @@
-const { QueryResult } = require("gamedig");
 const { MessageEmbed } = require("discord.js");
 
 /**
- * @param {QueryResult} state
+ * @param {jsonExample} state
  * @returns {MessageEmbed} Discord Message Embed
  */
 module.exports = (state) => {
@@ -39,122 +38,165 @@ module.exports = (state) => {
  */
 function getMapData(level) {
   switch (level.toLowerCase()) {
+    case "levels/bc1_harvest_day_cq":
+      return {
+        name: "Harvest Day",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/bc1_harvest_day_cq.jpg",
+      };
+
+    case "levels/bc1_harvest_day_gr":
+      return {
+        name: "Harvest Day",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/bc1_harvest_day_cq.jpg",
+      };
+
+    case "levels/bc1_oasis_cq":
+      return {
+        name: "Oasis",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/bc1_oasis_cq.jpg",
+      };
+
+    case "levels/bc1_oasis_gr":
+      return {
+        name: "Oasis",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/bc1_oasis_cq.jpg",
+      };
+
+    case "levels/mp_001":
+      return {
+        name: "Panama Canal",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_001.png",
+      };
+
     case "levels/mp_002":
       return {
         name: "Valparaiso",
-        image: "https://imgur.com/fcc5ZCs.jpg",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_002.jpg",
+      };
+
+    case "levels/mp_003":
+      return {
+        name: "Laguna Alta",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_003.png",
       };
 
     case "levels/mp_004":
       return {
         name: "Isla Inocentes",
-        image: "https://imgur.com/xeTBcRP",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_004.jpeg",
       };
-    case "levels/mp_006":
-      return {
-        name: "Arica Harbor",
-        image: "https://imgur.com/PJaZp5M",
-      };
-    case "levels/mp_007gr":
-      return {
-        name: "White Pass",
-        image: "https://imgur.com/hKsKPdP",
-      };
-    case "levels/mp_008":
-      return {
-        name: "Nelson Bay",
-        image: "https://imgur.com/HvSUOtJ",
-      };
-    case "levels/mp_009gr":
-      return {
-        name: "Laguna Presa",
-        image: "https://imgur.com/grGrBiA",
-      };
-    case "levels/mp_012gr":
-      return {
-        neme: "Port Valdez",
-        image: "https://imgur.com/nCezj1K",
-      };
-    case "levels/mp_005gr":
-      return {
-        name: "Atacama Desert",
-        image: "https://imgur.com/PIlcYaB",
-      };
-    case "levels/bc1_harvest_day_gr":
-      return {
-        name: "Harvest Day",
-        image: "https://imgur.com/3GMZNsf",
-      };
-    case "levels/bc1_oasis_gr":
-      return {
-        name: "Oasis",
-        image: "https://imgur.com/bScDFK7",
-      };
-    case "levels/mp_sp_002gr":
-      return {
-        name: "Cold War",
-        image: "https://imgur.com/9LAg3DH",
-      };
-    case "levels/mp_001":
-      return {
-        name: "Panama Canal",
-        image: "https://imgur.com/MdjzgLe",
-      };
-    case "levels/mp_003":
-      return {
-        name: "Laguna Alta",
-        image: "https://imgur.com/AoHbIG8",
-      };
+
     case "levels/mp_005":
       return {
         name: "Atacama Desert",
-        image: "https://imgur.com/PIlcYaB",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_005.jpeg",
       };
+
+    case "levels/mp_005gr":
+      return {
+        name: "Atacama Desert",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_005.jpeg",
+      };
+
+    case "levels/mp_006":
+      return {
+        name: "Arica Harbor",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_006.jpg",
+      };
+
     case "levels/mp_006cq":
       return {
         name: "Arica Harbor",
-        image: "https://imgur.com/PJaZp5M",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_006.jpg",
       };
+
     case "levels/mp_007":
       return {
         name: "White Pass",
-        image: "https://imgur.com/hKsKPdP",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_007.jpg",
       };
+
+    case "levels/mp_007gr":
+      return {
+        name: "White Pass",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_007.jpg",
+      };
+
+    case "levels/mp_008":
+      return {
+        name: "Nelson Bay",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_008.jpeg",
+      };
+
     case "levels/mp_008cq":
       return {
         name: "Nelson Bay",
-        image: "https://imgur.com/HvSUOtJ",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_008.jpeg",
       };
+
     case "levels/mp_009cq":
       return {
         name: "Laguna Presa",
-        image: "https://imgur.com/grGrBiA",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_009cq.jpg",
       };
+
+    case "levels/mp_009gr":
+      return {
+        name: "Laguna Presa",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_009cq.jpg",
+      };
+
     case "levels/mp_012cq":
       return {
         name: "Port Valdez",
-        image: "https://imgur.com/nCezj1K",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_012cq.jpg",
       };
-    case "levels/bc1_oasis_cq":
+
+    case "levels/mp_012gr":
       return {
-        name: "Oasis",
-        image: "https://imgur.com/bScDFK7",
+        neme: "Port Valdez",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_012cq.jpg",
       };
-    case "levels/bc1_harvest_day_cq":
+
+    case "levels/mp_sp_002gr":
       return {
-        name: "Harvest Day",
-        image: "https://imgur.com/3GMZNsf",
+        name: "Cold War",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_sp_002gr.jpg",
       };
+
     case "levels/mp_sp_005cq":
       return {
         name: "Heavy Metal",
-        image: "https://imgur.com/5v9GqMz",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/mp_sp_005cq.jpeg",
       };
 
     default:
       return {
         name: level,
-        image: "https://imgur.com/fcc5ZCs.jpg",
+        image:
+          "https://raw.githubusercontent.com/saiteja-madha/gameserver-status/main/assets/bfbc2/unknown.jpg",
       };
   }
 }
